@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS `quote` (
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`quote_id`),
   KEY `user_id` (`user_id`),
-  KEY `created_at` (`created_at`),
+  KEY `created_at` (`created_at`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
 
 
