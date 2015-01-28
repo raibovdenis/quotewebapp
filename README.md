@@ -11,9 +11,13 @@ git clone https://github.com/raibovdenis/quotewebapp.git
 В mysql создать базу данных "quotewebapp" и пользователя "root" с пустым паролем. Назначить права для пользовотеля.
 Настройки для базы данных можно поменять в файле src/main/resources/database.properties
 
-3) Запустить проект
+3) Импорт структуры базы данных
+
+В mysql импортировать содержимое файла src/main/resources/setup.mysql
+
+4) Запустить проект
 ```
 mvn clean package
 mvn tomcat7:run
 ```
-4) Проект будет доступен по адресу [http://127.0.0.1:8080/quotewebapp/](http://127.0.0.1:8080/quotewebapp/)
+5) Проект будет доступен по адресу [http://127.0.0.1:8080/quotewebapp/](http://127.0.0.1:8080/quotewebapp/)
