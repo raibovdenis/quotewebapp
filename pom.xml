@@ -10,6 +10,7 @@
 	<name>Quote Web App</name>
 
 	<properties>
+		<java.version>1.7</java.version>
 		<springframework.version>4.1.4.RELEASE</springframework.version>
 		<hibernate.core.version>4.3.8.Final</hibernate.core.version>
 		<hibernate.common.version>4.0.5.Final</hibernate.common.version>
@@ -102,13 +103,15 @@
 	</dependencies>
 
 	<build>
+		<finalName>quotewebapp</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>2.6</version>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.2</version>
 				<configuration>
-					<warName>quotewebapp</warName>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
 				</configuration>
 			</plugin>
 			
