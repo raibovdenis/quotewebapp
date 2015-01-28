@@ -1,0 +1,44 @@
+body {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/** General */
+.b-copyright {
+    padding: 10px 0;
+}
+
+/** Quote list */
+.b-quote-item:first-child {
+    margin: 10px 0 0 0;
+}
+
+.b-quote-item {
+    margin: 35px 0 0 0;
+}
+
+.b-quote-item-meta-author {
+    font-weight: bold;
+}
+
+/** Quote form */
+.form-group.required .control-label:after {
+    color: red;
+    content: "*";
+    margin-left: 5px;
+}
+
+/** Quote custom form */
+.b-form-inline .b-form-middle {
+    padding: 10px 0;
+    text-align: center;
+}
+
+/** Custom error */
+.has-error .form-control.b-canceled-validate {
+    border: 1px solid #ccc;
+}
+
+.has-error .help-block.b-canceled-validate {
+    color: #737373;
+}
