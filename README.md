@@ -4,7 +4,7 @@
 
 1) Клонировать репозитарий
 ```
-git clone git@bitbucket.org:avonbarksdale/spring.git
+git clone https://github.com/raibovdenis/quotewebapp.git
 ```
 2) Создать базу данных и пользователя
 
